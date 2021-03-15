@@ -1,0 +1,21 @@
+#Project Euler Question no.4
+
+
+def sum_of_square(x):
+    total=0
+    for num in range(x):
+        num=num**2
+        total+=num
+    return total
+    
+print(sum_of_square(101))
+
+def square_of_sum(x):
+    total=0
+    for num in range(x):
+        total+=num
+    return total**2
+    
+print(square_of_sum(101))
+
+print(square_of_sum(101)-sum_of_square(101))
